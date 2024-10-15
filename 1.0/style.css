@@ -1,0 +1,82 @@
+*{
+    font-family: sans-serif;
+}
+
+html{
+    transition:300ms;
+    animation: fadeIn 300ms normal;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    background: #1b2653;
+    width: 100vw;
+    height: 2.5em;
+    color: #fff;
+    display: flex;
+    padding: 0px 1em;
+    box-sizing: border-box;
+}
+.nav a:visited, .access a:visited{
+    color: #fff;
+}
+.nav a,.access p, .access a{
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+.nav,.access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.access{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.register{
+    padding: 0px 1em;
+}
+.register a{
+    border:2.25px solid #FFF;
+    border-radius:12px;
+    padding: 0.3em 1em;
+}
+.img_container{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1em;
+
+}
+.img_container img{
+    width: 5.5em;
+}
+
+.content{
+    flex: 1;
+}
+
+footer{
+    padding: 0px 2em;
+}
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1}
+    }

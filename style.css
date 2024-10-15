@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Medium.ttf') format('truetype');
+  }
+
+html{
+    transition:300ms;
+    animation: fadeIn 300ms normal;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: fit-content;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    background: #1b2653;
+    width: 100vw;
+    height: 2.5em;
+    color: #fff;
+    display: flex;
+    padding: 0px 1em;
+    box-sizing: border-box;
+}
+.nav a:visited, .access a:visited{
+    color: #fff;
+}
+.nav a,.access p, .access a{
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+.nav,.access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.access{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.register{
+    padding: 0px 1em;
+}
+.register a{
+    border:2.25px solid #FFF;
+    border-radius:12px;
+    padding: 0.3em 1em;
+}
+.img_container{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1em;
+
+}
+
+
+.box1{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+
+    display: grid;
+    grid-template-columns: 114.5 114.5;
+    grid-template-rows: 114.5 114.5;
+
+
+
+}
+
+.img_mulher{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 7px;
+    margin: 7px;
+
+}
+
+.cont_mulher{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 7px;
+    margin-right: 7px;
+    width: 114.5px;
+    height: 114.5px;
+}
+
+.img_homem{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 7px;
+}
+
+.cont_homem{
+    grid-column: 2;
+    grid-row: 2;
+    width: 114.5px;
+    height: 114.5px;
+}
+
+.box2{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.box3{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.box4{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.box5{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+.box6{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 250px);
+
+    gap: 50px 100px;
+
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 50px;
+
+
+}
+
+
+
+.img_container img{
+    width: 5.5em;
+}
+
+.content{
+    flex: 1;
+}
+
+footer{
+    padding: 0px 2em;
+}
+
+
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1}
+    }
